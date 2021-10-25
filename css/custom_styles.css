@@ -1,0 +1,304 @@
+
+/*   
+  -webkit-user-select: none; 
+  -moz-user-select: none; 
+  -ms-user-select: none;
+  user-select: none; 
+*/
+
+*{
+  text-decoration: none;
+  list-style: none;
+  list-style-type: none;
+  font-family: 'Montserrat', sans-serif;
+}
+html{
+  scroll-behavior: smooth;
+}
+img, a{
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-zoom: none;
+  }
+
+:root {
+  --redClr : #ff0505;
+  --danger : #ff0505;
+  --grayClr : #afafaf;
+  --lightClr : #ededed;
+}
+.text-danger{
+  color: var(--redClr);
+}
+.text-gray{
+  color: var(--grayClr);
+}
+.vh100{
+  height: 100vh;
+}
+
+.sm-text {
+  font-size: 10px;
+}
+.lg-text{
+  font-size: 18px;
+}
+
+.navbar-brand img{
+  height: 70px;
+}
+
+.btn-gray {
+  color: #fff;
+  background-color: #afafaf;
+  border-color: #afafaf;
+}
+.btn-dark:hover {
+  color: #fff;
+  background-color: #9b9b9b;
+  border-color: #9b9b9b;
+}
+.btn-dark:focus, .btn-dark.focus {
+  color: #fff;
+  background-color: #9b9b9b;
+  border-color: #9b9b9b;
+  box-shadow: 0 0 0 0.2rem rgba(66, 72, 81, 0.5);
+}
+.btn-dark.disabled, .btn-dark:disabled {
+  color: #fff;
+  background-color: #afafaf;
+  border-color: #afafaf;
+}
+.btn-dark:not(:disabled):not(.disabled):active, .btn-dark:not(:disabled):not(.disabled).active, .show > .btn-dark.dropdown-toggle {
+  color: #9b9b9b;
+  border-color: #9b9b9b;
+}
+.btn-dark:not(:disabled):not(.disabled):active:focus, .btn-dark:not(:disabled):not(.disabled).active:focus, .show > .btn-dark.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(66, 72, 81, 0.5);
+}
+
+.btn-outline-gray {
+  color: #afafaf;
+  border-color: #afafaf;
+}
+.btn-outline-gray:hover {
+  color: var(--danger);
+  border-color: var(--danger);
+}
+.btn-outline-gray:not(:disabled):not(.disabled):active, .btn-outline-gray:not(:disabled):not(.disabled).active, .show > .btn-outline-gray.dropdown-toggle {
+  
+  color: var(--danger);
+  border-color: var(--danger);
+}
+
+.banner{
+  position: relative;
+}
+
+.banner-line{
+  position: absolute;
+  z-index: 100;
+  font-size: 50px;
+  font-weight: bold;
+  margin-left: -250px;
+  top: -170px;
+}
+
+
+.video-banner {
+  height: 350px;
+  width: 100%;
+  background: url(assets/img/concert.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.play-btn{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.banner-line{
+  line-height: 90%;
+}
+
+.nav-link{
+  position: relative;
+  overflow: hidden;
+}
+
+.nav-link::before{
+  content: "";
+  position: absolute;
+  background: #b80000;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  left: -50%;
+  opacity: 0;
+  transition: all 0.5s ease-in;
+  z-index: -1;
+}
+
+.nav-link:hover::before{
+  opacity: 1;
+  left: 0;
+  transition: all 0.5s ease-in;
+}
+.container-title{
+  position: relative;
+  overflow: hidden;
+}
+.container-title::before{
+  content: "";
+  position: absolute;
+  background: #b80000;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  left: 0%;
+  z-index: -1;
+}
+.header-line {
+  line-height: 100%;
+  font-size: 35px;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+.bg-smoke{
+  background: url(assets/img/smoke.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: hard-light;
+}
+
+tbody tr td{
+  vertical-align: center;
+}
+
+.gallery-video{
+  height: 500px;
+  background: url(/assets/img/image1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.img-2 img, .img-1 img{
+  height: 250px;
+  width: 250px;
+}
+.img-3{
+  width: 270px;
+  height: 500px;
+  background: url(assets/img/image5.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
+.team-member a{
+  color: #9b9b9b;
+  transition: all 0.3s ease-in;
+}
+
+.team-member a:hover{
+  color: #ff0505;
+  transition: all 0.3s ease-in;
+}
+
+.team-member a:hover img{
+  opacity: 0.6;
+  transition: all 0.3s ease-in;
+}
+
+.item, .partner-img img{
+  width: 250px;
+}
+
+.logo-last{
+  height: 100px;
+}
+
+
+.bottom-navbar a{
+  font-size: 10px;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+@media (max-width: 992px) {
+  .img-2 img, .img-1 img{
+    height: 350px;
+    width: 350px;
+  }
+
+  .banner-line{
+    position: absolute;
+    z-index: 100;
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 95px;
+    top: -320px;
+    text-align: center;
+  }
+  
+  .play-btn{
+    position: absolute;
+    right: 35%;
+    top: 50%;
+  }
+
+  .img-3{
+    width: 270px;
+    height: 700px;
+    overflow: hidden;
+    background: url(assets/img/image5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .banner-text{
+    text-align: center;
+
+  }
+}
+
+@media (max-width: 576px) {
+  .video-banner {
+    height: 150px;
+    width: 100%;
+  }
+
+  .banner-line{
+    position: absolute;
+    z-index: 100;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 0px;
+    top: -220px;
+    text-align: center;
+  }
+
+  .play-btn{
+    position: absolute;
+    right: 15%;
+    top: 30%;
+  }
+
+  .banner-text{
+    text-align: center;
+
+  }
+
+  .header-line {
+    line-height: 100%;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: bold;
+  }
+}
